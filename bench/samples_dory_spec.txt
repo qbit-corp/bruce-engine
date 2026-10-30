@@ -1,0 +1,46 @@
+
+=== text depth=4096 rep=0 ===
+The fall of the Roman Empire was not a single event but a long, messy process that unfolded over centuries. The empire's decline was driven by a combination of internal and external pressures. The Roman military faced increasing challenges 
+
+=== text depth=4096 rep=1 ===
+The fall of the Roman Empire was not a single event but a long, messy process that unfolded over centuries. The empire's decline was driven by a combination of internal and external pressures. The Roman military faced increasing challenges 
+
+=== code depth=4096 rep=0 ===
+```
+
+The user wants me to complete the implementation of `llama_context.cpp`. The code is cut off at the end of the constructor. I need to continue implementing the rest of the `llama_context` class.
+
+Looking at the context, this is a large
+
+=== code depth=4096 rep=1 ===
+```
+
+The user wants me to complete the implementation of `llama_context.cpp`. The code is cut off at the end of the constructor. I need to continue implementing the rest of the `llama_context` class.
+
+Looking at the context, this is a large
+
+=== text depth=32768 rep=0 ===
+The fall of the Western Roman Empire was not a single event but a slow, grinding process that lasted from the third century onward. The empire's borders were constantly being pushed back, and its population was shrinking. The empire's econo
+
+=== text depth=32768 rep=1 ===
+The fall of the Western Roman Empire was not a single event but a slow, grinding process that lasted from the third century onward. The empire's borders were constantly being pushed back, and its population was shrinking. The empire's econo
+
+=== code depth=32768 rep=0 ===
+```
+
+The output is truncated. Let me continue reading the rest of the file to understand the complete implementation.
+
+Let me focus on the key parts I need to understand:
+
+1. The `llama_context` class structure and its key methods
+2. How th
+
+=== code depth=32768 rep=1 ===
+```
+
+The output is truncated. Let me continue reading the rest of the file to understand the complete implementation.
+
+Let me focus on the key parts I need to understand:
+
+1. The `llama_context` class structure and its key methods
+2. How th

@@ -1,0 +1,10 @@
+
+=== text depth=4096 rep=0 ===
+The fall of the Roman Empire was not a single event but a long, messy process that unfolded over centuries. The empire's decline was driven by a combination of internal and external pressures. The Roman military faced constant pressure from
+
+=== code depth=4096 rep=0 ===
+```
+
+The user wants me to complete the implementation of `llama_context.cpp`. The code is cut off at the end of the constructor. I need to continue implementing the rest of the `llama_context` class.
+
+Looking at the context, this is a large

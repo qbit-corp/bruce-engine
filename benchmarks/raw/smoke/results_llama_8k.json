@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "engine": "llama",
+    "started": "2026-10-30 00:22:05",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "model": "<models>\\NVIDIA-Nemotron-Labs-Dory1.0-4B-Q5_K_M.gguf",
+    "depths": [
+      8192
+    ],
+    "n_predict": 256,
+    "gen_headroom": 256,
+    "prompts": [
+      "text"
+    ],
+    "reps": {
+      "8192": 1
+    },
+    "executable": "<models>\\dory\\llama.cpp\\build-cuda\\bin\\llama-server.exe",
+    "command_template": [
+      "<models>\\dory\\llama.cpp\\build-cuda\\bin\\llama-server.exe",
+      "-m",
+      "<models>\\NVIDIA-Nemotron-Labs-Dory1.0-4B-Q5_K_M.gguf",
+      "-ngl",
+      "999",
+      "-c",
+      "8192",
+      "-fa",
+      "on",
+      "--jinja",
+      "-np",
+      "1",
+      "--cache-type-k",
+      "q8_0",
+      "--cache-type-v",
+      "q8_0",
+      "-b",
+      "2048",
+      "-ub",
+      "1024",
+      "--override-kv",
+      "dory.num_loops=int:2,dory.recurrent_kv_cache_mode=str:last_loop",
+      "-ot",
+      "blk.*(scale|alpha).*=CUDA0,token_embd.*=CUDA0,output_scale.*=CUDA0",
+      "--load-mode",
+      "none",
+      "-t",
+      "1",
+      "--cache-ram",
+      "0",
+      "--temp",
+      "1.0",
+      "--top-p",
+      "0.95",
+      "--top-k",
+      "0",
+      "--min-p",
+      "0.0",
+      "--repeat-penalty",
+      "1.0",
+      "--reasoning",
+      "on",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "18211"
+    ],
+    "gpu_at_start": {
+      "mem_used_mib": 63,
+      "mem_total_mib": 12288,
+      "util": 0,
+      "clock_mhz": 210,
+      "temp_c": 43,
+      "power_w": 13.94
+    }
+  },
+  "results": [
+    {
+      "engine": "llama",
+      "prompt": "text",
+      "depth": 8192,
+      "context": 8448,
+      "rep": 0,
+      "reps": 1,
+      "launch_s": 12.543879270553589,
+      "gpu_before": {
+        "mem_used_mib": 4101,
+        "mem_total_mib": 12288,
+        "util": 0,
+        "clock_mhz": 427,
+        "temp_c": 46,
+        "power_w": 35.4
+      },
+      "prompt_n": 8192,
+      "prompt_ms": 4934.71,
+      "prompt_tps": 1660.0772892429343,
+      "predicted_n": 256,
+      "predicted_ms": 5662.023,
+      "predicted_tps": 45.03690642019645,
+      "ttft_ms": null,
+      "cache_n": 0,
+      "total_ms": null,
+      "wall_s": 10.602295900000172,
+      "body_mib": 0.04169273376464844,
+      "content_head": "The fall of the Roman Empire is a complex historical process that has been debated by historians for centuries. The empire did not collapse in a single event bu",
+      "gpu_after": {
+        "mem_used_mib": 4101,
+        "mem_total_mib": 12288,
+        "util": 95,
+        "clock_mhz": 1890,
+        "temp_c": 59,
+        "power_w": 126.38
+      }
+    }
+  ]
+}

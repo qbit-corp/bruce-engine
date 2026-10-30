@@ -1,0 +1,30 @@
+{
+  "os": "Microsoft Windows 10 Home 10.0.19045",
+  "cpu": "AMD Ryzen 5 5600G with Radeon Graphics",
+  "cpu_cores": 6,
+  "cpu_threads": 12,
+  "ram_installed_gb": 16.0,
+  "ram_gb": 13.9,
+  "gpu": "NVIDIA GeForce RTX 3060, 12288, 596.21, 2100, 187.00",
+  "cuda": "Cuda compilation tools, release 13.3, V13.3.73",
+  "captured": "2026-10-30 00:33:48",
+  "engines": {
+    "bruce": {
+      "path": "<repo>\\engine\\bruce.exe",
+      "size_bytes": 10808832,
+      "mtime": "2026-10-29 23:40:25"
+    },
+    "llama": {
+      "path": "<models>\\dory\\llama.cpp\\build-cuda\\bin\\llama-server.exe",
+      "size_bytes": 10752,
+      "mtime": "2026-10-20 00:26:26"
+    }
+  },
+  "model": {
+    "path": "<models>\\NVIDIA-Nemotron-Labs-Dory1.0-4B-Q5_K_M.gguf",
+    "size_bytes": 3673288864,
+    "mtime": "2026-10-19 23:42:16"
+  },
+  "llama_build": "0.6.0-dev (build 1, commit 57b70d0)",
+  "bruce_build": "engine/bruce.exe mtime 2026-10-29 23:40:25"
+}

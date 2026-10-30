@@ -1,0 +1,62 @@
+# --- build output -----------------------------------------------------------
+*.exe
+*.obj
+*.o
+*.lib
+*.pdb
+*.ilk
+*.exp
+engine/bruce
+build/
+out/
+.vs/
+
+# --- local scratch / profiling ---------------------------------------------
+tmp/
+*.bin
+*.nsys-rep
+*.ncu-rep
+*.sqlite
+*.sqlite-journal
+*.sass
+*.log
+bench/logs/
+benchmarks/logs/
+
+# --- python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- model weights and generated corpora -----------------------------------
+*.gguf
+*.safetensors
+*.ggml
+bench/code_corpus.txt
+bench/text_corpus.txt
+bench/corpus_*_ids.json
+bench/*_suffix_ids.json
+
+# --- reference llama.cpp checkout (clone it yourself, see docs/DEVELOPMENT.md)
+tools/doryref/
+
+# --- local agent / editor config -------------------------------------------
+.opencode/
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- stray dev output -------------------------------------------------------
+tools/dump.txt
+tools/err.txt
+tools/*_validate.log
+tools/envcheck.cmd
+
+# --- one-off experiment / source-mutation scripts ---------------------------
+tools/patch_*.py
+tools/revert_*.py
+tools/mma_gemm[0-9]*.cu
+tools/build_mma_gemm[0-9]*.cmd

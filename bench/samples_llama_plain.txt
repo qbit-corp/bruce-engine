@@ -1,0 +1,58 @@
+
+=== text depth=4096 rep=0 ===
+Do not write a summary or bullet points. Do not use the word "first" or "last". Do not use the word "event". Do not use the word "crisis". Do not use the word "defeat". Do not use the word "victory". Do not use the word "war". Do not use th
+
+=== text depth=4096 rep=1 ===
+Do not write a summary or bullet points. Do not use the word "first" or "last". Do not use the word "event". Do not use the word "crisis". Do not use the word "defeat". Do not use the word "victory". Do not use the word "war". Do not use th
+
+=== text depth=4096 rep=2 ===
+Do not write a summary or bullet points. Do not use the word "first" or "last". Do not use the word "event". Do not use the word "crisis". Do not use the word "defeat". Do not use the word "victory". Do not use the word "war". Do not use th
+
+=== code depth=4096 rep=0 ===
+```
+
+The user wants me to complete the implementation of the llama_context constructor in llama-context.cpp. The code is cut off at "cparams.n_outputs_max = params.n_outputs_max == 0 || llama_model_has_encoder(&model) ? c". I need to contin
+
+=== code depth=4096 rep=1 ===
+```
+
+The user wants me to complete the implementation of the llama_context constructor in llama-context.cpp. The code is cut off at "cparams.n_outputs_max = params.n_outputs_max == 0 || llama_model_has_encoder(&model) ? c". I need to contin
+
+=== code depth=4096 rep=2 ===
+```
+
+The user wants me to complete the implementation of the llama_context constructor in llama-context.cpp. The code is cut off at "cparams.n_outputs_max = params.n_outputs_max == 0 || llama_model_has_encoder(&model) ? c". I need to contin
+
+=== text depth=32768 rep=0 ===
+The fall of the Western Roman Empire was not a single event but a slow, grinding process that lasted from the third century onward. The empire's borders were constantly being pushed back, and its population was shrinking. The empire's econo
+
+=== text depth=32768 rep=1 ===
+The fall of the Western Roman Empire was not a single event but a slow, grinding process that lasted from the third century onward. The empire's borders were constantly being pushed back, and its population was shrinking. The empire's econo
+
+=== code depth=32768 rep=0 ===
+```
+
+The output is truncated. Let me continue reading the rest of the file to understand the complete implementation.
+
+Let me focus on the key parts I need to understand:
+
+1. The `llama_context` class structure and its key methods
+2. How th
+
+=== code depth=32768 rep=1 ===
+```
+
+The output is truncated. Let me continue reading the rest of the file to understand the complete implementation.
+
+Let me focus on the key parts I need to understand:
+
+1. The `llama_context` class structure and its key methods
+2. How th
+
+=== text depth=256000 rep=0 ===
+The fall of the Western Roman Empire was not a single event but a slow, grinding collapse that began in the third century AD and reached its climax in 476 AD. For the average Roman citizen, the end of the empire was not a dramatic battle bu
+
+=== code depth=256000 rep=0 ===
+```
+
+The implementation above is a solid start, but there are several areas where the code can be improved for robustness and clarity. The ring buffer design needs to ensure strict memory ordering to prevent data races, especially in multi-

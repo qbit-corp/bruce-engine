@@ -1,0 +1,329 @@
+{
+  "meta": {
+    "engine": "dory",
+    "tag": "spec",
+    "spec": true,
+    "ctx": 262144,
+    "n_predict": 256,
+    "model": "<models>\\NVIDIA-Nemotron-Labs-Dory1.0-4B-Q5_K_M.gguf",
+    "depths": [
+      [
+        4096,
+        2
+      ],
+      [
+        32768,
+        2
+      ]
+    ],
+    "started": "2026-10-24 10:20:03",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "gpu": {
+      "mem_used_mib": 52,
+      "mem_total_mib": 12288,
+      "util": 0,
+      "clock_mhz": 210,
+      "temp_c": 54,
+      "power_w": 14.8
+    },
+    "cmd": [
+      "<old-repo>\\engine\\dory.exe",
+      "--model",
+      "<models>\\NVIDIA-Nemotron-Labs-Dory1.0-4B-Q5_K_M.gguf",
+      "--serve",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "18110",
+      "--ctx",
+      "262144",
+      "--loops",
+      "2",
+      "--n-batch",
+      "512",
+      "--n-predict",
+      "-1",
+      "--draft",
+      "7",
+      "--thinking",
+      "--temp",
+      "1.0",
+      "--top-p",
+      "0.95",
+      "--top-k",
+      "0",
+      "--min-p",
+      "0.0",
+      "--repeat-penalty",
+      "1.0",
+      "--repeat-last-n",
+      "64"
+    ]
+  },
+  "results": [
+    {
+      "prompt": "text",
+      "depth": 4096,
+      "rep": 0,
+      "gpu_before": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 97,
+        "clock_mhz": 1890,
+        "temp_c": 61,
+        "power_w": 115.88
+      },
+      "prompt_n": 4096,
+      "prompt_ms": 1997.6239999979734,
+      "prompt_tps": 2050.4359178725103,
+      "predicted_n": 256,
+      "predicted_ms": 4416.490999996662,
+      "predicted_tps": 57.9645696097181,
+      "ttft_ms": 1998.8469000011683,
+      "cache_n": 0,
+      "total_ms": 6414.114999994636,
+      "wall_s": 6.4165426999970805,
+      "body_mib": 0.020917892456054688,
+      "content_head": "The fall of the Roman Empire was not a single event but a long, messy process that unfolded over centuries. The empire's decline was driven by a combination of internal and external pressures. The Roman military faced increasing challenges ",
+      "gpu_after": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 98,
+        "clock_mhz": 1897,
+        "temp_c": 62,
+        "power_w": 116.52
+      }
+    },
+    {
+      "prompt": "text",
+      "depth": 4096,
+      "rep": 1,
+      "gpu_before": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 98,
+        "clock_mhz": 1897,
+        "temp_c": 62,
+        "power_w": 116.52
+      },
+      "prompt_n": 4096,
+      "prompt_ms": 1995.6381999999285,
+      "prompt_tps": 2052.476245443762,
+      "predicted_n": 256,
+      "predicted_ms": 4420.090099990368,
+      "predicted_tps": 57.91737141298497,
+      "ttft_ms": 1996.671199992299,
+      "cache_n": 0,
+      "total_ms": 6415.728299990296,
+      "wall_s": 6.41805100000056,
+      "body_mib": 0.020917892456054688,
+      "content_head": "The fall of the Roman Empire was not a single event but a long, messy process that unfolded over centuries. The empire's decline was driven by a combination of internal and external pressures. The Roman military faced increasing challenges ",
+      "gpu_after": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 98,
+        "clock_mhz": 1897,
+        "temp_c": 63,
+        "power_w": 117.06
+      }
+    },
+    {
+      "prompt": "code",
+      "depth": 4096,
+      "rep": 0,
+      "gpu_before": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 98,
+        "clock_mhz": 1897,
+        "temp_c": 63,
+        "power_w": 117.06
+      },
+      "prompt_n": 4096,
+      "prompt_ms": 1995.9901999980211,
+      "prompt_tps": 2052.1142839298814,
+      "predicted_n": 256,
+      "predicted_ms": 4536.785299986601,
+      "predicted_tps": 56.42762067686035,
+      "ttft_ms": 1996.8597999960184,
+      "cache_n": 0,
+      "total_ms": 6532.775499984622,
+      "wall_s": 6.5348612999951,
+      "body_mib": 0.020843505859375,
+      "content_head": "```\n\nThe user wants me to complete the implementation of `llama_context.cpp`. The code is cut off at the end of the constructor. I need to continue implementing the rest of the `llama_context` class.\n\nLooking at the context, this is a large",
+      "gpu_after": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 99,
+        "clock_mhz": 1897,
+        "temp_c": 64,
+        "power_w": 118.27
+      }
+    },
+    {
+      "prompt": "code",
+      "depth": 4096,
+      "rep": 1,
+      "gpu_before": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 99,
+        "clock_mhz": 1897,
+        "temp_c": 64,
+        "power_w": 118.27
+      },
+      "prompt_n": 4096,
+      "prompt_ms": 1995.5874999910593,
+      "prompt_tps": 2052.5283907713147,
+      "predicted_n": 256,
+      "predicted_ms": 4527.320899993181,
+      "predicted_tps": 56.54558306224451,
+      "ttft_ms": 1996.472699984908,
+      "cache_n": 0,
+      "total_ms": 6522.9083999842405,
+      "wall_s": 6.524866199993994,
+      "body_mib": 0.020843505859375,
+      "content_head": "```\n\nThe user wants me to complete the implementation of `llama_context.cpp`. The code is cut off at the end of the constructor. I need to continue implementing the rest of the `llama_context` class.\n\nLooking at the context, this is a large",
+      "gpu_after": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 98,
+        "clock_mhz": 1897,
+        "temp_c": 65,
+        "power_w": 118.67
+      }
+    },
+    {
+      "prompt": "text",
+      "depth": 32768,
+      "rep": 0,
+      "gpu_before": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 98,
+        "clock_mhz": 1897,
+        "temp_c": 65,
+        "power_w": 118.67
+      },
+      "prompt_n": 32768,
+      "prompt_ms": 20289.694899991155,
+      "prompt_tps": 1615.0070349265964,
+      "predicted_n": 256,
+      "predicted_ms": 5968.076200008392,
+      "predicted_tps": 42.89489467303383,
+      "ttft_ms": 20298.14889998734,
+      "cache_n": 0,
+      "total_ms": 26257.771099999547,
+      "wall_s": 26.269086200001766,
+      "body_mib": 0.16548824310302734,
+      "content_head": "The fall of the Western Roman Empire was not a single event but a slow, grinding process that lasted from the third century onward. The empire's borders were constantly being pushed back, and its population was shrinking. The empire's econo",
+      "gpu_after": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 99,
+        "clock_mhz": 1890,
+        "temp_c": 68,
+        "power_w": 122.34
+      }
+    },
+    {
+      "prompt": "text",
+      "depth": 32768,
+      "rep": 1,
+      "gpu_before": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 99,
+        "clock_mhz": 1890,
+        "temp_c": 68,
+        "power_w": 122.34
+      },
+      "prompt_n": 32768,
+      "prompt_ms": 20238.32770000398,
+      "prompt_tps": 1619.1061082578258,
+      "predicted_n": 256,
+      "predicted_ms": 5965.851199999452,
+      "predicted_tps": 42.91089258143474,
+      "ttft_ms": 20246.324500009418,
+      "cache_n": 0,
+      "total_ms": 26204.178900003433,
+      "wall_s": 26.21649590000743,
+      "body_mib": 0.16548824310302734,
+      "content_head": "The fall of the Western Roman Empire was not a single event but a slow, grinding process that lasted from the third century onward. The empire's borders were constantly being pushed back, and its population was shrinking. The empire's econo",
+      "gpu_after": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 98,
+        "clock_mhz": 1890,
+        "temp_c": 69,
+        "power_w": 123.32
+      }
+    },
+    {
+      "prompt": "code",
+      "depth": 32768,
+      "rep": 0,
+      "gpu_before": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 98,
+        "clock_mhz": 1890,
+        "temp_c": 69,
+        "power_w": 123.32
+      },
+      "prompt_n": 32768,
+      "prompt_ms": 20243.66590000689,
+      "prompt_tps": 1618.679154351626,
+      "predicted_n": 256,
+      "predicted_ms": 5628.7409000098705,
+      "predicted_tps": 45.48086411288732,
+      "ttft_ms": 20249.766400009394,
+      "cache_n": 0,
+      "total_ms": 25872.40680001676,
+      "wall_s": 25.881321199995,
+      "body_mib": 0.16549015045166016,
+      "content_head": "```\n\nThe output is truncated. Let me continue reading the rest of the file to understand the complete implementation.\n\nLet me focus on the key parts I need to understand:\n\n1. The `llama_context` class structure and its key methods\n2. How th",
+      "gpu_after": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 99,
+        "clock_mhz": 1890,
+        "temp_c": 69,
+        "power_w": 126.03
+      }
+    },
+    {
+      "prompt": "code",
+      "depth": 32768,
+      "rep": 1,
+      "gpu_before": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 99,
+        "clock_mhz": 1890,
+        "temp_c": 69,
+        "power_w": 126.03
+      },
+      "prompt_n": 32768,
+      "prompt_ms": 20254.292999997735,
+      "prompt_tps": 1617.8298595761237,
+      "predicted_n": 256,
+      "predicted_ms": 5651.514200001955,
+      "predicted_tps": 45.29759475786356,
+      "ttft_ms": 20260.337400004268,
+      "cache_n": 0,
+      "total_ms": 25905.80719999969,
+      "wall_s": 25.914254000002984,
+      "body_mib": 0.16549015045166016,
+      "content_head": "```\n\nThe output is truncated. Let me continue reading the rest of the file to understand the complete implementation.\n\nLet me focus on the key parts I need to understand:\n\n1. The `llama_context` class structure and its key methods\n2. How th",
+      "gpu_after": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 98,
+        "clock_mhz": 1890,
+        "temp_c": 70,
+        "power_w": 125.67
+      }
+    }
+  ]
+}

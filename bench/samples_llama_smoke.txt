@@ -1,0 +1,8 @@
+
+=== text depth=4096 rep=0 ===
+Do not write a summary or bullet points. Do not use the word "first" or "last". Do not use the word "event". Do not use the word "crisis". Do not use the word "defeat". Do not use the word "victory". Do not use the word "war". Do not use th
+
+=== code depth=4096 rep=0 ===
+```
+
+The user wants me to complete the implementation of the llama_context constructor in llama-context.cpp. The code is cut off at "cparams.n_outputs_max = params.n_outputs_max == 0 || llama_model_has_encoder(&model) ? c". I need to contin

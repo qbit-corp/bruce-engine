@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "engine": "dory",
+    "tag": "smoke",
+    "spec": false,
+    "ctx": 262144,
+    "n_predict": 256,
+    "model": "<models>\\NVIDIA-Nemotron-Labs-Dory1.0-4B-Q5_K_M.gguf",
+    "depths": [
+      [
+        4096,
+        1
+      ]
+    ],
+    "started": "2026-10-24 09:42:48",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "gpu": {
+      "mem_used_mib": 51,
+      "mem_total_mib": 12288,
+      "util": 0,
+      "clock_mhz": 210,
+      "temp_c": 38,
+      "power_w": 13.28
+    },
+    "cmd": [
+      "<old-repo>\\engine\\dory.exe",
+      "--model",
+      "<models>\\NVIDIA-Nemotron-Labs-Dory1.0-4B-Q5_K_M.gguf",
+      "--serve",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "18110",
+      "--ctx",
+      "262144",
+      "--loops",
+      "2",
+      "--n-batch",
+      "512",
+      "--n-predict",
+      "-1",
+      "--draft",
+      "0",
+      "--thinking",
+      "--temp",
+      "1.0",
+      "--top-p",
+      "0.95",
+      "--top-k",
+      "0",
+      "--min-p",
+      "0.0",
+      "--repeat-penalty",
+      "1.0",
+      "--repeat-last-n",
+      "64"
+    ]
+  },
+  "results": [
+    {
+      "prompt": "text",
+      "depth": 4096,
+      "rep": 0,
+      "gpu_before": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 99,
+        "clock_mhz": 1875,
+        "temp_c": 50,
+        "power_w": 113.19
+      },
+      "prompt_n": 4096,
+      "prompt_ms": 2009.5737999975681,
+      "prompt_tps": 2038.2431339445989,
+      "predicted_n": 256,
+      "predicted_ms": 4677.111999988556,
+      "predicted_tps": 54.73463111437707,
+      "ttft_ms": 2009.7323999851942,
+      "cache_n": 0,
+      "total_ms": 6686.685799986124,
+      "wall_s": 6.6884422000002814,
+      "body_mib": 0.020908355712890625,
+      "content_head": "The fall of the Roman Empire was not a single event but a long, messy process that unfolded over centuries. The empire's decline was driven by a combination of internal and external pressures. The Roman military faced constant pressure from",
+      "gpu_after": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 99,
+        "clock_mhz": 1897,
+        "temp_c": 54,
+        "power_w": 114.53
+      }
+    },
+    {
+      "prompt": "code",
+      "depth": 4096,
+      "rep": 0,
+      "gpu_before": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 99,
+        "clock_mhz": 1897,
+        "temp_c": 54,
+        "power_w": 114.53
+      },
+      "prompt_n": 4096,
+      "prompt_ms": 1994.5726999938488,
+      "prompt_tps": 2053.572677502621,
+      "predicted_n": 256,
+      "predicted_ms": 4756.94050000608,
+      "predicted_tps": 53.8161030182473,
+      "ttft_ms": 1994.7264000028372,
+      "cache_n": 0,
+      "total_ms": 6751.5131999999285,
+      "wall_s": 6.753371600003447,
+      "body_mib": 0.020833969116210938,
+      "content_head": "```\n\nThe user wants me to complete the implementation of `llama_context.cpp`. The code is cut off at the end of the constructor. I need to continue implementing the rest of the `llama_context` class.\n\nLooking at the context, this is a large",
+      "gpu_after": {
+        "mem_used_mib": 9631,
+        "mem_total_mib": 12288,
+        "util": 99,
+        "clock_mhz": 1897,
+        "temp_c": 56,
+        "power_w": 115.06
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+
+=== text depth=4096 rep=0 ===
+Do not write a summary or bullet points. Do not use the word "first" or "last". Do not use the word "eventually". Do not use the word "finally". Do not use the word "ultimately". Do not use the word "consequently". Do not use the word "ther
+
+=== text depth=4096 rep=1 ===
+Do not write a summary or bullet points. Do not use the word "first" or "last". Do not use the word "eventually". Do not use the word "finally". Do not use the word "ultimately". Do not use the word "consequently". Do not use the word "ther
+
+=== code depth=4096 rep=0 ===
+```
+
+The user wants me to complete the implementation of the llama_context constructor in llama-context.cpp. The code is cut off at "cparams.n_outputs_max = params.n_outputs_max == 0 || llama_model_has_encoder(&model) ? c". I need to contin
+
+=== code depth=4096 rep=1 ===
+```
+
+The user wants me to complete the implementation of the llama_context constructor in llama-context.cpp. The code is cut off at "cparams.n_outputs_max = params.n_outputs_max == 0 || llama_model_has_encoder(&model) ? c". I need to contin
+
+=== text depth=32768 rep=0 ===
+The fall of the Western Roman Empire was not a single event but a slow, grinding process that lasted from the third century onward. The empire's borders were constantly being pushed back, and its population was shrinking. The empire's econo
+
+=== text depth=32768 rep=1 ===
+The fall of the Western Roman Empire was not a single event but a slow, grinding process that lasted from the third century onward. The empire's borders were constantly being pushed back, and its population was shrinking. The empire's econo
+
+=== code depth=32768 rep=0 ===
+```
+
+The output is truncated. Let me continue reading the rest of the file to understand the complete implementation.
+
+Let me focus on the key parts I need to understand:
+
+1. The `llama_context` class structure and its key methods
+2. How th
+
+=== code depth=32768 rep=1 ===
+```
+
+The output is truncated. Let me continue reading the rest of the file to understand the complete implementation.
+
+Let me focus on the key parts I need to understand:
+
+1. The `llama_context` class structure and its key methods
+2. How th

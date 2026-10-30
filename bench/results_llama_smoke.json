@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "engine": "llama",
+    "tag": "smoke",
+    "spec": false,
+    "ctx": 262144,
+    "n_predict": 256,
+    "model": "<models>\\NVIDIA-Nemotron-Labs-Dory1.0-4B-Q5_K_M.gguf",
+    "depths": [
+      [
+        4096,
+        1
+      ]
+    ],
+    "started": "2026-10-24 09:43:25",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "gpu": {
+      "mem_used_mib": 51,
+      "mem_total_mib": 12288,
+      "util": 0,
+      "clock_mhz": 292,
+      "temp_c": 48,
+      "power_w": 30.9
+    },
+    "cmd": [
+      "<models>\\dory\\llama.cpp\\build-cuda\\bin\\llama-server.exe",
+      "-m",
+      "<models>\\NVIDIA-Nemotron-Labs-Dory1.0-4B-Q5_K_M.gguf",
+      "-ngl",
+      "999",
+      "-c",
+      "262144",
+      "-fa",
+      "on",
+      "--jinja",
+      "-np",
+      "1",
+      "--cache-type-k",
+      "q8_0",
+      "--cache-type-v",
+      "q8_0",
+      "-b",
+      "2048",
+      "-ub",
+      "1024",
+      "--override-kv",
+      "dory.num_loops=int:2,dory.recurrent_kv_cache_mode=str:last_loop",
+      "-ot",
+      "blk.*(scale|alpha).*=CUDA0,token_embd.*=CUDA0,output_scale.*=CUDA0",
+      "--load-mode",
+      "none",
+      "-t",
+      "1",
+      "--cache-ram",
+      "0",
+      "--temp",
+      "1.0",
+      "--top-p",
+      "0.95",
+      "--top-k",
+      "0",
+      "--min-p",
+      "0.0",
+      "--repeat-penalty",
+      "1.0",
+      "--reasoning",
+      "on",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "18111"
+    ]
+  },
+  "results": [
+    {
+      "prompt": "text",
+      "depth": 4096,
+      "rep": 0,
+      "gpu_before": {
+        "mem_used_mib": 10313,
+        "mem_total_mib": 12288,
+        "util": 94,
+        "clock_mhz": 1897,
+        "temp_c": 56,
+        "power_w": 124.15
+      },
+      "prompt_n": 4096,
+      "prompt_ms": 2308.399,
+      "prompt_tps": 1774.3899559824797,
+      "predicted_n": 256,
+      "predicted_ms": 5456.342,
+      "predicted_tps": 46.73460717821573,
+      "ttft_ms": null,
+      "cache_n": 0,
+      "total_ms": null,
+      "wall_s": 7.767921599996043,
+      "body_mib": 0.020908355712890625,
+      "content_head": "Do not write a summary or bullet points. Do not use the word \"first\" or \"last\". Do not use the word \"event\". Do not use the word \"crisis\". Do not use the word \"defeat\". Do not use the word \"victory\". Do not use the word \"war\". Do not use th",
+      "gpu_after": {
+        "mem_used_mib": 10313,
+        "mem_total_mib": 12288,
+        "util": 95,
+        "clock_mhz": 1890,
+        "temp_c": 58,
+        "power_w": 125.07
+      }
+    },
+    {
+      "prompt": "code",
+      "depth": 4096,
+      "rep": 0,
+      "gpu_before": {
+        "mem_used_mib": 10313,
+        "mem_total_mib": 12288,
+        "util": 95,
+        "clock_mhz": 1890,
+        "temp_c": 58,
+        "power_w": 125.07
+      },
+      "prompt_n": 4096,
+      "prompt_ms": 2312.989,
+      "prompt_tps": 1770.8687762890354,
+      "predicted_n": 256,
+      "predicted_ms": 5467.777,
+      "predicted_tps": 46.63686906031464,
+      "ttft_ms": null,
+      "cache_n": 0,
+      "total_ms": null,
+      "wall_s": 7.783965299997362,
+      "body_mib": 0.020833969116210938,
+      "content_head": "```\n\nThe user wants me to complete the implementation of the llama_context constructor in llama-context.cpp. The code is cut off at \"cparams.n_outputs_max = params.n_outputs_max == 0 || llama_model_has_encoder(&model) ? c\". I need to contin",
+      "gpu_after": {
+        "mem_used_mib": 10313,
+        "mem_total_mib": 12288,
+        "util": 94,
+        "clock_mhz": 1890,
+        "temp_c": 59,
+        "power_w": 125.01
+      }
+    }
+  ]
+}

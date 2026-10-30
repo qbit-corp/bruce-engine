@@ -1,0 +1,42 @@
+
+=== text depth=32768 rep=0 ===
+The fall of the Western Roman Empire was not a single event but a slow, grinding process that lasted from the 3rd century onward. The empire's population was already shrinking before the final collapse, and the economic strain of maintainin
+
+=== text depth=32768 rep=1 ===
+The fall of the Western Roman Empire was not a single event but a slow, grinding process that lasted from the 3rd century onward. The empire's population was already shrinking before the final collapse, and the economic strain of maintainin
+
+=== code depth=32768 rep=0 ===
+```cpp
+#pragma once
+
+#include <cstdint>
+#include <cstring>
+#include <mutex>
+#include <vector>
+#include <stdexcept>
+#include <cassert>
+
+template <size_t N>
+class RingBuffer {
+public:
+    RingBuffer() : head_(0), tail_(0), count_(0) {}
+
+    /
+
+=== code depth=32768 rep=1 ===
+```cpp
+#pragma once
+
+#include <cstdint>
+#include <cstring>
+#include <mutex>
+#include <vector>
+#include <stdexcept>
+#include <cassert>
+
+template <size_t N>
+class RingBuffer {
+public:
+    RingBuffer() : head_(0), tail_(0), count_(0) {}
+
+    /

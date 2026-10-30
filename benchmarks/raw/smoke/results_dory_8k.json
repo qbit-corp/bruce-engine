@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "engine": "dory",
+    "started": "2026-10-30 00:21:33",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "model": "<models>\\NVIDIA-Nemotron-Labs-Dory1.0-4B-Q5_K_M.gguf",
+    "depths": [
+      8192
+    ],
+    "n_predict": 256,
+    "gen_headroom": 256,
+    "prompts": [
+      "text"
+    ],
+    "reps": {
+      "8192": 1
+    },
+    "executable": "<old-repo>\\engine\\dory.exe",
+    "command_template": [
+      "<old-repo>\\engine\\dory.exe",
+      "--model",
+      "<models>\\NVIDIA-Nemotron-Labs-Dory1.0-4B-Q5_K_M.gguf",
+      "--serve",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "18210",
+      "--ctx",
+      "8192",
+      "--loops",
+      "2",
+      "--n-batch",
+      "512",
+      "--n-predict",
+      "-1",
+      "--slots",
+      "1",
+      "--draft",
+      "0",
+      "--thinking",
+      "--no-live",
+      "--temp",
+      "1.0",
+      "--top-p",
+      "0.95",
+      "--top-k",
+      "0",
+      "--min-p",
+      "0.0",
+      "--repeat-penalty",
+      "1.0",
+      "--repeat-last-n",
+      "64"
+    ],
+    "gpu_at_start": {
+      "mem_used_mib": 63,
+      "mem_total_mib": 12288,
+      "util": 0,
+      "clock_mhz": 210,
+      "temp_c": 38,
+      "power_w": 13.69
+    }
+  },
+  "results": [
+    {
+      "engine": "dory",
+      "prompt": "text",
+      "depth": 8192,
+      "context": 8448,
+      "rep": 0,
+      "reps": 1,
+      "launch_s": 10.701721668243408,
+      "gpu_before": {
+        "mem_used_mib": 8195,
+        "mem_total_mib": 12288,
+        "util": 0,
+        "clock_mhz": 390,
+        "temp_c": 42,
+        "power_w": 34.24
+      },
+      "prompt_n": 8192,
+      "prompt_ms": 3324.4210999999195,
+      "prompt_tps": 2464.1884266707966,
+      "predicted_n": 256,
+      "predicted_ms": 3767.205800000578,
+      "predicted_tps": 67.9548752021885,
+      "ttft_ms": 3324.5692000007257,
+      "cache_n": 0,
+      "total_ms": 7091.626900000498,
+      "wall_s": 7.094657599999664,
+      "body_mib": 0.04169273376464844,
+      "content_head": "The fall of the Roman Empire is a complex historical process that has been debated by historians for centuries. The empire did not collapse in a single event bu",
+      "gpu_after": {
+        "mem_used_mib": 8195,
+        "mem_total_mib": 12288,
+        "util": 99,
+        "clock_mhz": 1897,
+        "temp_c": 53,
+        "power_w": 116.83
+      }
+    }
+  ]
+}

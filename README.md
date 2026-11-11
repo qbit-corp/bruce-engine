@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/bruce.png" width="200" alt="Bruce the shark">
+  <img src="assets/bruce.svg" width="200" alt="Bruce the shark">
 </p>
 
 # Bruce
